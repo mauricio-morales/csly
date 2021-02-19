@@ -1,5 +1,5 @@
 // ReSharper disable InconsistentNaming
-namespace ParserTests.Issue224_IndexOutOfRangeException
+namespace ParserTests.Issue225_IndexOutOfRangeException
 {
     public enum DateRoundKind
     {

@@ -1,28 +1,25 @@
 using System.Collections.Generic;
 
-namespace ParserTests.Issue224_IndexOutOfRangeException
+namespace ParserTests.Issue225_IndexOutOfRangeException
 {
-    public class BoostExpression : Expression
+    public class GroupExpression : Expression
     {
         public Expression Expression { get; }
-        public int Boost { get; }
-
         public override IEnumerable<Expression> Children => new List<Expression> {Expression};
 
-        public BoostExpression(Expression expression, int boost)
+        public GroupExpression(Expression expression)
         {
             Expression = expression;
-            Boost = boost;
         }
         
         public override string ToQuery()
         {
-            return $"{Expression.ToQuery()}^{Boost}";
+            return $"({Expression.ToQuery()})";
         }
 
         public override string ToString()
         {
-            return $"{Expression}^{Boost}";
+            return $"({Expression})";
         }
     }
 }

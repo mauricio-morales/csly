@@ -3,7 +3,7 @@ using sly.lexer;
 using sly.parser.generator;
 using sly.parser.parser;
 
-namespace ParserTests.Issue224_IndexOutOfRangeException
+namespace ParserTests.Issue225_IndexOutOfRangeException
 {
     public class IndexOutOfRangeParser
     {

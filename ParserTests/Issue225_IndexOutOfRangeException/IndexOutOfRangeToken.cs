@@ -1,6 +1,6 @@
 using sly.lexer;
 
-namespace ParserTests.Issue224_IndexOutOfRangeException
+namespace ParserTests.Issue225_IndexOutOfRangeException
 {
     [Lexer(IgnoreWS = true, IgnoreEOL = true, KeyWordIgnoreCase = true)]
     public enum IndexOutOfRangeToken

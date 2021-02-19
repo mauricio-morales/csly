@@ -3,7 +3,7 @@ using System.Linq;
 using sly.parser.generator;
 using Xunit;
 
-namespace ParserTests.Issue224_IndexOutOfRangeException
+namespace ParserTests.Issue225_IndexOutOfRangeException
 {
     public class IndexOutOfRangeTests
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ParserTests.Issue224_IndexOutOfRangeException
+namespace ParserTests.Issue225_IndexOutOfRangeException
 {
     public class UnaryExpression : Expression
     {
